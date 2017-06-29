@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: godmars-eureka
+
+server:
+  port: 10001
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    # 扫描间隔时间,默认60s
+    #eviction-interval-timer-in-ms: 5000
+    # 关闭自我保护模式,默认true
+    #enable-self-preservation: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
