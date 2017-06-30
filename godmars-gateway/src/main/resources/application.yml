@@ -1,0 +1,22 @@
+spring:
+  application:
+    # 应用名
+    name: godmars-gateway
+
+server:
+  # 端口
+  port: 40001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: godmars-web
+    api-b:
+      path: /api-b/**
+      serviceId: godmars-web
