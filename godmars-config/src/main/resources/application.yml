@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: godmars-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/
+          search-paths: godmars-config
+          username:
+          password:
+      label: master
+
+server:
+  port: 50001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
