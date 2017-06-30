@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "godmars-service", fallback = FeignServiceImpl.class)
+@FeignClient(value = "godmars-service", fallback = FeignServiceMock.class)
 public interface FeignService {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
