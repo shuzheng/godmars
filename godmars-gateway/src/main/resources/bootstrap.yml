@@ -1,16 +1,27 @@
 spring:
   application:
-    # 应用名
     name: godmars-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: godmars-config
+      label: master
+      profile: dev
+      username: admin
+      password: 123456
 
 server:
-  # 端口
   port: 40001
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:10001/eureka/
+
+management:
+  security:
+    enabled: false
 
 zuul:
   routes:

@@ -1,11 +1,11 @@
 spring:
   application:
-    name: godmars-web
+    name: godmars-service
   cloud:
     config:
       discovery:
         enabled: true
-        service-id: godmars-config
+        service-id: godmars-service
       label: master
       profile: dev
       username: admin
@@ -14,7 +14,7 @@ spring:
     base-url: http://localhost:60001
 
 server:
-  port: 30001
+  port: 20001
 
 eureka:
   client:

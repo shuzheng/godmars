@@ -1,16 +1,1 @@
 from: godmars-web-dev
-
-feign:
-  hystrix:
-    # 开启hystrix
-    enabled: true
-
-godmars-service:
-  ribbon:
-    # ribbon负载均衡策略改为轮训
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-
-management:
-  security:
-    # 不需要验证
-    enabled: false

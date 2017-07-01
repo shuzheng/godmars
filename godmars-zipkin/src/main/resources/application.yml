@@ -1,10 +1,8 @@
 spring:
   application:
-    # \u5E94\u7528\u540D
     name: godmars-zipkin
 
 server:
-  # \u7AEF\u53E3
   port: 60001
 
 eureka:

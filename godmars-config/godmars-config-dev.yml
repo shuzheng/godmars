@@ -1,0 +1,9 @@
+from: godmars-config-dev
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: godmars-web
+    api-b:
+      path: /api-b/**
+      serviceId: godmars-web
