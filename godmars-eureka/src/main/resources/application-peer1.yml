@@ -7,14 +7,15 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: peer1
   server:
     # 扫描间隔时间,默认60s
     #eviction-interval-timer-in-ms: 5000
     # 关闭自我保护模式,默认true
     #enable-self-preservation: false
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    # 单实例可不注册自身实例，高可用集群时注册自身实例
+    #registerWithEureka: false
+    #fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://peer2:10002/eureka/

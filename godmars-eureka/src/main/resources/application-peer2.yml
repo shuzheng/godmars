@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: godmars-eureka
+
+server:
+  port: 10002
+
+eureka:
+  instance:
+    hostname: peer2
+  server:
+    # 扫描间隔时间,默认60s
+    #eviction-interval-timer-in-ms: 5000
+    # 关闭自我保护模式,默认true
+    #enable-self-preservation: false
+  client:
+    # 单实例可不注册自身实例，高可用集群时注册自身实例
+    #registerWithEureka: false
+    #fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer1:10001/eureka/
