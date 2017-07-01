@@ -1,6 +1,8 @@
 spring:
   application:
     name: godmars-service
+  zipkin:
+    base-url: http://localhost:60001
 
 server:
   port: 20001
