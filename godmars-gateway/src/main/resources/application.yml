@@ -1,10 +1,10 @@
 spring:
   application:
-    # Ó¦ÓÃÃû
+    # åº”ç”¨å
     name: godmars-gateway
 
 server:
-  # ¶Ë¿Ú
+  # ç«¯å£
   port: 40001
 
 eureka:

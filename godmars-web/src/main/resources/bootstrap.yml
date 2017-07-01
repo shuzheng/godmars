@@ -1,7 +1,13 @@
 spring:
   application:
-    # 应用名
     name: godmars-web
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: godmars-config
+      label: master
+      profile: dev
 
 server:
   # 端口
@@ -9,7 +15,6 @@ server:
 
 eureka:
   client:
-    # 注册
     serviceUrl:
       defaultZone: http://localhost:10001/eureka/
 

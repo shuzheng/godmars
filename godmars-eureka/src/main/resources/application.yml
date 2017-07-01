@@ -9,9 +9,9 @@ eureka:
   instance:
     hostname: localhost
   server:
-    # 扫描间隔时间,默认60s
+    # 鎵弿闂撮殧鏃堕棿,榛樿60s
     #eviction-interval-timer-in-ms: 5000
-    # 关闭自我保护模式,默认true
+    # 鍏抽棴鑷垜淇濇姢妯″紡,榛樿true
     #enable-self-preservation: false
   client:
     registerWithEureka: false
