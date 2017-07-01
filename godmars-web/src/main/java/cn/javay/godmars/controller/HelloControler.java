@@ -23,7 +23,7 @@ public class HelloControler {
 
     @RequestMapping(value = "/config")
     public String config(){
-        return from + "<form action='http://localhost:50001/bus/refresh?destination=customers:**' method='post'><input type='submit'/></form>";
+        return from + "<form action='http://localhost:50001/bus/refresh' method='post'><input type='submit'/></form>";
     }
 
 }
