@@ -27,7 +27,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:10001/eureka/
+      defaultZone: http://peer1:10001/eureka/
 
 security:
   user:
