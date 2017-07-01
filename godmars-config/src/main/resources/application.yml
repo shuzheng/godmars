@@ -1,15 +1,25 @@
 spring:
   application:
     name: godmars-config
+  profiles:
+    # native 读取本地配置文件, git 读取git仓库配置文件
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: F:/GitHub/godmars/godmars-config
         git:
-          uri: https://github.com/
+          uri: https://github.com/shuzheng/godmars
           search-paths: godmars-config
           username:
           password:
       label: master
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
 
 server:
   port: 50001

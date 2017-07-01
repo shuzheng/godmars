@@ -1,3 +1,1 @@
-version: 0.01
-app:
-  name: config
+from: godmars-web-dev
