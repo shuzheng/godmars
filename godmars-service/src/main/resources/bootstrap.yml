@@ -5,16 +5,16 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: godmars-service
+        service-id: godmars-config
       label: master
       profile: dev
       username: admin
       password: 123456
   zipkin:
-    base-url: http://localhost:60001
+    base-url: http://localhost:30001
 
 server:
-  port: 20001
+  port: 50001
 
 eureka:
   client:

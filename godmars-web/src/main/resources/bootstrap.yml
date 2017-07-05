@@ -11,10 +11,10 @@ spring:
       username: admin
       password: 123456
   zipkin:
-    base-url: http://localhost:60001
+    base-url: http://localhost:30001
 
 server:
-  port: 30001
+  port: 60001
 
 eureka:
   client:

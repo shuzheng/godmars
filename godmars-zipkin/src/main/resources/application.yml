@@ -3,7 +3,7 @@ spring:
     name: godmars-zipkin
 
 server:
-  port: 60001
+  port: 30001
 
 eureka:
   client:
