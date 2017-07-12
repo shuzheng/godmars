@@ -8,7 +8,7 @@ spring:
     config:
       server:
         native:
-          search-locations: F:/GitHub/godmars/godmars-config
+          search-locations: E:/GitHub/godmars/godmars-config
         git:
           uri: https://github.com/shuzheng/godmars
           search-paths: godmars-config
@@ -22,7 +22,7 @@ spring:
       password: guest
 
 server:
-  port: 50001
+  port: 20001
 
 eureka:
   client:
